@@ -1,0 +1,25 @@
+int pirOutput=9;
+int buzzer = 12;
+void setup()
+{
+ Serial.begin(9600);
+ pinMode(pirOutput,INPUT);
+ digitalWrite(pirOutput,LOW);
+ pinMode(buzzer,OUTPUT);
+ digitalWrite(buzzer,LOW);
+}
+void loop()
+{
+ if(digitalRead(pirOutput)==HIGH)
+ {
+ Serial.println("GSM BASED LOCKER SECURITY SYSTEM..!!! ");
+ digitalWrite(buzzer,HIGH);
+ delay(500);
+ Serial.println("Call connecting to owner..!!");
+ delay(500);
+ Serial.println("ATD+91*********;");
+delay(8000);
+ Serial.println("LOCKER SECURITY ALERT!!!");
+ delay(1000);
+ }
+}
