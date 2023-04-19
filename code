@@ -17,11 +17,8 @@ void loop()
  delay(500);
  Serial.println("Call connecting to owner..!!");
  delay(500);
- Serial.println("ATD+916302621997;");
-Department of ECE,MLRITM 32
-
- [GSM BASED LOCKER SECURITY SYSTEM]]
- delay(8000);
+ Serial.println("ATD+91********;");
+delay(8000);
  Serial.println("LOCKER SECURITY ALERT!!!");
  delay(1000);
  }
